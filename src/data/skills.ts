@@ -1,80 +1,58 @@
 import {
   type IconType,
-  SiAstro,
-  SiBootstrap,
-  SiCss3,
+  SiDatabricks,
+  SiPython,
+  SiPandas,
+  SiJupyter,
+  SiPlotly,
+  SiMicrosoftsqlserver,
+  SiSelenium,
   SiDocker,
-  SiHtml5,
-  SiJavascript,
-  SiMongodb,
-  SiMysql,
-  SiNextdotjs,
-  SiNginx,
-  SiNodedotjs,
-  SiPostgresql,
-  SiReact,
-  SiRedis,
-  SiRubyonrails,
-  SiSass,
-  SiTailwindcss,
+  SiGit,
+  SiAzuredevops,
+  SiAzurefunctions,
+  SiFigma,
 } from '@icons-pack/react-simple-icons'
+import { VscAzure } from "react-icons/vsc";
+import { MdFactory } from "react-icons/md";
+import { BsBarChartFill } from "react-icons/bs";
+
+
 
 const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
   [
     {
-      field: 'Frontend',
+      field: 'Data Engineering',
       skills: [
-        { skill: 'html', icon: SiHtml5 },
-        { skill: 'css', icon: SiCss3 },
-        { skill: 'javascript', icon: SiJavascript },
-        { skill: 'react', icon: SiReact },
-        { skill: 'sass', icon: SiSass },
-        { skill: 'tailwind', icon: SiTailwindcss },
-        { skill: 'nextjs', icon: SiNextdotjs },
-        { skill: 'astro', icon: SiAstro },
-        {
-          skill: 'bootstrap',
-          icon: SiBootstrap,
-        },
+        { skill: 'python', icon: SiPython },
+        { skill: 'git', icon: SiGit },
+        { skill: 'databricks', icon: SiDatabricks },
+        { skill: 'Azure Data Factory', icon: MdFactory },
+        { skill: 'Azure Functions', icon: SiAzurefunctions },
+        { skill: 'SQL', icon: SiMicrosoftsqlserver },
+        { skill: 'pandas', icon: SiPandas },
+        { skill: 'jupyter', icon: SiJupyter },
+        { skill: 'selenium', icon: SiSelenium },
+
       ],
     },
     {
-      field: 'Backend',
+      field: 'Intrastructure',
       skills: [
-        {
-          skill: 'nodejs',
-          icon: SiNodedotjs,
-        },
-        {
-          skill: 'ruby on rails',
-          icon: SiRubyonrails,
-        },
-        {
-          skill: 'redis',
-          icon: SiRedis,
-        },
-        {
-          skill: 'postgresql',
-          icon: SiPostgresql,
-        },
-        {
-          skill: 'mongodb',
-          icon: SiMongodb,
-        },
-        {
-          skill: 'mysql',
-          icon: SiMysql,
-        },
-        {
-          skill: 'nginx',
-          icon: SiNginx,
-        },
-        {
-          skill: 'docker',
-          icon: SiDocker,
-        },
+        { skill: 'Azure', icon: VscAzure },
+        { skill: 'docker', icon: SiDocker },
+        { skill: 'Azure DevOps', icon: SiAzuredevops },
       ],
     },
+    {
+      field: 'Data Visualisation',
+      skills: [
+        { skill: 'Power BI', icon: BsBarChartFill },
+        { skill: 'plotly', icon: SiPlotly },
+        { skill: 'Figma', icon: SiFigma },
+      ],
+    },
+
   ]
 
 export default SKILLS
