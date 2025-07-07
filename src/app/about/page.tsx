@@ -8,10 +8,9 @@ export default function About() {
 
       <div className="mb-10 text-base sm:text-lg">
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
-          consequatur, harum pariatur provident rerum placeat magni voluptas
-          consectetur in exercitationem nobis aut, molestiae iure possimus
-          aspernatur nesciunt laudantium ab atque.
+          As a Analytics/BI Engineer with a background in translation, I bring a unique set of skills and experience to the fields of data engineering and visualisation.
+
+          My background in translation has given me a strong attention to detail and the ability to effectively communicate complex information to a wide range of audiences, and allowed me to become a liaison between technical and non-technical stakeholders, while also exhibiting strong technical skills that I pick up quickly.
         </p>
       </div>
 
