@@ -1,5 +1,5 @@
+import React from 'react'
 import {
-  IconType,
   SiGithub,
   SiGmail,
   SiLinkedin,
@@ -7,7 +7,7 @@ import {
 } from '@icons-pack/react-simple-icons'
 
 export default function Links() {
-  const links: { icon: IconType; href: string }[] = [
+  const links: { icon: React.ComponentType<React.SVGProps<SVGSVGElement>>; href: string }[] = [
     {
       icon: SiGmail,
       href: 'mailto:hello@lewandowskimichal.tech',
@@ -31,7 +31,7 @@ export default function Links() {
       {links.map((link, id) => {
         return (
           <a target="_blank" key={id} href={link.href}>
-            <link.icon title="" />
+            <link.icon />
           </a>
         )
       })}

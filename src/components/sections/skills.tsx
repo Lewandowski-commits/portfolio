@@ -25,7 +25,7 @@ export default function Skills() {
                   <TooltipProvider key={id}>
                     <Tooltip>
                       <TooltipTrigger asChild>
-                        <skill.icon className="h-8 w-8" title="" />
+                        <skill.icon className="h-8 w-8" />
                       </TooltipTrigger>
                       <TooltipContent>{skill.skill}</TooltipContent>
                     </Tooltip>

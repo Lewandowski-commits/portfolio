@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   type IconType,
   SiDatabricks,
@@ -19,7 +20,7 @@ import { BsBarChartFill } from "react-icons/bs";
 
 
 
-const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
+const SKILLS: { field: string; skills: { skill: string; icon: React.ComponentType<React.SVGProps<SVGSVGElement>> }[] }[] =
   [
     {
       field: 'Data Engineering',
